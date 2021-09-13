@@ -18,8 +18,9 @@
             Recusandae, odio.nihil magni voluptatem totam nihil magni voluptatem
             totam
           </p>
+          <a class="btn btn-outline-primary" href="#">Learn more</a>
         </b-col>
-        <b-col class="text-white text-center">
+        <b-col class="text-white text-center mobile">
           <b-img
             class="big"
             src="../../assets/img/png/hero.png"
@@ -62,5 +63,11 @@ p {
 
 section {
   margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 767px) and (min-width: 300px)  {
+    .mobile{
+        display: none;
+    }
 }
 </style>

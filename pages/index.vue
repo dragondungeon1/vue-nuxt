@@ -3,6 +3,8 @@
     <Header />
     <Index-Hero />
     <Index-CardRow/>
+    <Index-Location/>
+    <Footer/>
   </div>
 </template>
 
