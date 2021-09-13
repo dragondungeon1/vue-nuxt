@@ -7,9 +7,9 @@
           <p style="color: #5c7ae4">Make an appointment</p>
           <p>
             <b-col cols="0.5">
-              <a class="social-phone" href="www.google.com"> 06 12 34 56 78</a> <br /> <br>
-              <a class="social-whatsapp" href="www.whatsapp.com"> 06 12 34 56 78</a> <br /> <br>
-              <a class="social-insta" href="www.instagram.com"> @develokey</a> <br /> <br>
+              <a class="text-white social-phone" href="www.google.com"> 06 12 34 56 78</a> <br /> <br>
+              <a class="text-white social-whatsapp" href="www.whatsapp.com"> 06 12 34 56 78</a> <br /> <br>
+              <a class="text-white social-insta" href="www.instagram.com"> @develokey</a> <br /> <br>
             </b-col>
           </p>
         </b-col>

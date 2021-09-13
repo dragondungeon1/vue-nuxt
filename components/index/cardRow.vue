@@ -15,7 +15,7 @@
           </div>
         </b-col>
 
-        <b-col class="text-white mb-5"
+        <b-col class="text-white mb-5 high"
           ><div class="card text-center">
             <p class="card-head">Services</p>
             <hr class="solid" />
@@ -51,6 +51,10 @@ hr.solid {
   opacity: 50%;
 }
 
+.high{
+   bottom: 40px
+}
+
 .card-head{
   font-weight: 400;
   font-size: 19px;
@@ -66,5 +70,25 @@ p {
 
 section{
   margin-bottom: 3rem;
+}
+
+.custom-shape-divider-top-1631566199 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1631566199 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 227px;
+}
+
+.custom-shape-divider-top-1631566199 .shape-fill {
+    fill: #C51B1B;
 }
 </style>

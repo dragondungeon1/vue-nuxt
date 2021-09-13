@@ -51,7 +51,7 @@
         >
       </b-sidebar>
     </div>
-    <hr class="solid" />
+    <hr class="solid i-know-you-are-looking" />
   </section>
 </template>
 
