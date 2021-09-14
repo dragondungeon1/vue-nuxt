@@ -42,8 +42,16 @@
         >
       </b-row>
     </b-container>
+
+    <div id="hustler">
+
+    </div>
   </section>
 </template>
+
+<script>
+
+</script>
 
 <style lang="css" scoped>
 hr.solid {
