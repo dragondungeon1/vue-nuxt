@@ -1,6 +1,7 @@
 <template>
     <section>
         <Header />
+        <Gym-Exercise/>
     </section>
 </template>
 
