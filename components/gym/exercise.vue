@@ -1,11 +1,35 @@
 <template>
   <section>
+    <div class="hero">
+      <div >
+        <h1 class="text-white text-center">
+          Lorem Ipsum
+        </h1>
+
+        <p class="text-white text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga <br>
+          voluptatibus accusantium eos quisquam aliquam ducimus error sit omnis, <br>
+          dignissimos cum officiis quibusdam aspernatur dolores temporibus quod <br>
+          explicabo praesentium cupiditate!
+        </p>
+        <div class="d-flex justify-content-center">
+        </div>
+      </div>
+    </div>
     <div class="container">
-      <div :style="{backgroundColor: checkASelected ? 'green' : 'transparent', backgroundColor: crossASelected ? 'red' : 'transparent'}"   class="item border-white text-white">
+      <div
+        :style="{
+          backgroundColor: checkASelected ? 'green' : 'transparent',
+          backgroundColor: crossASelected ? 'red' : 'transparent'
+        }"
+        class="item border-white text-white"
+      >
         <i @click="checkSelected('A')" class="fas fa-check fa-3x"></i>
 
         <div>ITEM</div>
-        <div><i @click="crossSelected('A')" class=" fas fa-times fa-3x"></i></div>
+        <div>
+          <i @click="crossSelected('A')" class=" fas fa-times fa-3x"></i>
+        </div>
       </div>
       <div class="item border-white text-white">
         <i class=" fas fa-check fa-3x"></i>
@@ -77,78 +101,79 @@
 }
 
 .cross {
-    background-color: red;
+  background-color: red;
 }
 
-.check{
-    background-color: green;
+
+.check {
+  background-color: green;
 }
 </style>
 // backgroundColor: crossASelected ? 'red' : 'transparent'
 
 <script>
 export default {
-    data() {
-        return {
-            checkASelected: false,
-            checkBSelected: false,
-            checkCSelected: false,
-            checkDSelected: false,
-            checkESelected: false,
-            checkFSelected: false,
-            checkGSelected: false,
-            checkHSelected: false,
-    // here ends the checks and starts the crosses
-            crossASelected: false,
-            crossBSelected: false,
-            crossCSelected: false,
-            crossDSelected: false,
-            crossESelected: false,
-            crossFSelected: false,
-            crossGSelected: false,
-            crossHSelected: false,
-        };
+  data() {
+    return {
+      checkASelected: false,
+      checkBSelected: false,
+      checkCSelected: false,
+      checkDSelected: false,
+      checkESelected: false,
+      checkFSelected: false,
+      checkGSelected: false,
+      checkHSelected: false,
+      // here ends the checks and starts the crosses
+      crossASelected: false,
+      crossBSelected: false,
+      crossCSelected: false,
+      crossDSelected: false,
+      crossESelected: false,
+      crossFSelected: false,
+      crossGSelected: false,
+      crossHSelected: false
+    };
+  },
+  methods: {
+    checkSelected(check) {
+      if (check === "A") {
+        this.checkASelected = true;
+      } else if (check === "B") {
+        this.checkBSelected = true;
+      } else if (check === "C") {
+        this.checkBSelected = true;
+      } else if (check === "D") {
+        this.checkBSelected = true;
+      } else if (check === "E") {
+        this.checkBSelected = true;
+      } else if (check === "F") {
+        this.checkBSelected = true;
+      } else if (check === "G") {
+        this.checkBSelected = true;
+      } else if (check === "H") {
+        this.checkBSelected = true;
+      }
     },
-    methods: {
-        checkSelected(check) {
-            if (check === 'A') {
-                this.checkASelected = true
-            }else if (check === 'B') {
-                this.checkBSelected = true
-            }else if (check === 'C') {
-                this.checkBSelected = true
-            }else if (check === 'D') {
-                this.checkBSelected = true
-            }else if (check === 'E') {
-                this.checkBSelected = true
-            }else if (check === 'F') {
-                this.checkBSelected = true
-            }else if (check === 'G') {
-                this.checkBSelected = true
-            }else if (check === 'H') {
-                this.checkBSelected = true
-            }
-        },
 
-        crossSelected(cross) {
-            if (cross === 'A') {
-                this.crossASelected = true
-            }else if (cross === 'B') {
-                this.crossBSelected = true
-            }else if (cross === 'C') {
-                this.crossBSelected = true
-            }else if (cross === 'D') {
-                this.crossBSelected = true
-            }else if (cross === 'E') {
-                this.crossBSelected = true
-            }else if (cross === 'F') {
-                this.crossBSelected = true
-            }else if (cross === 'G') {
-                this.crossBSelected = true
-            }else if (cross === 'H') {
-                this.crossBSelected = true
-            }
-        }
+    crossSelected(cross) {
+      if (cross === "A") {
+        this.crossASelected = true;
+      } else if (cross === "B") {
+        this.crossBSelected = true;
+      } else if (cross === "C") {
+        this.crossBSelected = true;
+      } else if (cross === "D") {
+        this.crossBSelected = true;
+      } else if (cross === "E") {
+        this.crossBSelected = true;
+      } else if (cross === "F") {
+        this.crossBSelected = true;
+      } else if (cross === "G") {
+        this.crossBSelected = true;
+      } else if (cross === "H") {
+        this.crossBSelected = true;
+      }
     }
-}
+  }
+};
 </script>
