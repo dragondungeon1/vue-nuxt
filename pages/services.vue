@@ -1,13 +1,12 @@
 <template>
-    
+  <div>
+    <Header />
+    <Services-Hero/>
+  </div>
 </template>
 
-<script>
-export default {
-    
-}
-</script>
-
 <style scoped>
-
+* {
+  background: #12012e;
+}
 </style>

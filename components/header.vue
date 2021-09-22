@@ -31,22 +31,27 @@
         backdrop
         shadow
       >
-        <a class="card border-white text-white bg-dark" href="/">
+        <a class="card  text-white bg-dark" href="/">
           <div class="px-3 py-2"><i class="fas fa-home"></i> Home</div></a
         >
-        <a class="card border-white text-white bg-dark mt-3" href="/About">
+        <a class="card  text-white bg-dark mt-3" href="/About">
           <div class="px-3 py-2">
             <i class="fas fa-info-circle"></i> About
           </div></a
         >
-        <a class="card border-white text-white bg-dark mt-3" href="/services">
+        <a class="card  text-white bg-dark mt-3" href="/services">
           <div class="px-3 py-2">
             <i class="fas fa-keyboard"></i> Services
           </div></a
         >
-        <a class="card border-white text-white bg-dark mt-3" href="/contact">
+        <a class="card  text-white bg-dark mt-3" href="/contact">
           <div class="px-3 py-2">
             <i class="fas fa-address-card"></i> Contact
+          </div></a
+        >
+        <a class="card  text-white bg-dark mt-3" href="/gym">
+          <div class="px-3 py-2">
+            <i class="fas fa-dumbbell"></i> gym
           </div></a
         >
       </b-sidebar>
