@@ -54,6 +54,12 @@
 </script>
 
 <style lang="css" scoped>
+@media only screen and (max-width: 425px) and (min-width: 320px) {
+.high {
+  bottom: 0px !important;
+}
+}
+
 hr.solid {
   border-top: 1px solid #5c7ae4;
   opacity: 50%;

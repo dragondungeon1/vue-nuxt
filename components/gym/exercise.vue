@@ -1,79 +1,134 @@
 <template>
   <section>
     <div class="hero">
-      <div >
-        <h1 class="text-white text-center">
-          Lorem Ipsum
-        </h1>
+      <div>
+        <h1 class="text-white text-center">Lorem Ipsum</h1>
 
         <p class="text-white text-center">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga <br>
-          voluptatibus accusantium eos quisquam aliquam ducimus error sit omnis, <br>
-          dignissimos cum officiis quibusdam aspernatur dolores temporibus quod <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae fuga
+          <br />
+          voluptatibus accusantium eos quisquam aliquam ducimus error sit omnis,
+          <br />
+          dignissimos cum officiis quibusdam aspernatur dolores temporibus quod
+          <br />
           explicabo praesentium cupiditate!
         </p>
-        <div class="d-flex justify-content-center">
-        </div>
+        <div class="d-flex justify-content-center"></div>
       </div>
     </div>
     <div class="container">
       <div
         :style="{
           backgroundColor: checkASelected ? 'green' : 'transparent',
-          backgroundColor: crossASelected ? 'red' : 'transparent'
+          background: crossASelected ? 'red' : 'transparent',
         }"
         class="item border-white text-white"
       >
         <i @click="checkSelected('A')" class="fas fa-check fa-3x"></i>
+        <div>ITEM</div>
+        <div>
+          <i @click="crossSelected('A')" class="fas fa-times fa-3x"></i>
+        </div>
+      </div>
+      <div
+        :style="{
+          backgroundColor: checkBSelected ? 'green' : 'transparent',
+          background: crossBSelected ? 'red' : 'transparent',
+        }"
+        class="item border-white text-white"
+      >
+        <i @click="checkSelected('B')" class="fas fa-check fa-3x"></i>
 
         <div>ITEM</div>
         <div>
-          <i @click="crossSelected('A')" class=" fas fa-times fa-3x"></i>
+          <i @click="crossSelected('B')" class="fas fa-times fa-3x"></i>
         </div>
       </div>
-      <div class="item border-white text-white">
-        <i class=" fas fa-check fa-3x"></i>
+      <div
+        :style="{
+          backgroundColor: checkCSelected ? 'green' : 'transparent',
+          background: crossCSelected ? 'red' : 'transparent',
+        }"
+        class="item border-white text-white"
+      >
+        <i @click="checkSelected('C')" class="fas fa-check fa-3x"></i>
 
         <div>ITEM</div>
-        <div><i class=" fas fa-times fa-3x"></i></div>
+        <div>
+          <i @click="crossSelected('C')" class="fas fa-times fa-3x"></i>
+        </div>
       </div>
-      <div class="item border-white text-white">
-        <i class=" fas fa-check fa-3x"></i>
+      <div
+        :style="{
+          backgroundColor: checkDSelected ? 'green' : 'transparent',
+          background: crossDSelected ? 'red' : 'transparent',
+        }"
+        class="item border-white text-white"
+      >
+        <i @click="checkSelected('D')" class="fas fa-check fa-3x"></i>
 
         <div>ITEM</div>
-        <div><i class=" fas fa-times fa-3x"></i></div>
+        <div>
+          <i @click="crossSelected('D')" class="fas fa-times fa-3x"></i>
+        </div>
       </div>
-      <div class="item border-white text-white">
-        <i class=" fas fa-check fa-3x"></i>
+      <div
+        :style="{
+          backgroundColor: checkESelected ? 'green' : 'transparent',
+          background: crossESelected ? 'red' : 'transparent',
+        }"
+        class="item border-white text-white"
+      >
+        <i @click="checkSelected('E')" class="fas fa-check fa-3x"></i>
 
         <div>ITEM</div>
-        <div><i class=" fas fa-times fa-3x"></i></div>
-      </div>
-      <div class="item border-white text-white">
-        <i class=" fas fa-check fa-3x"></i>
-
-        <div>ITEM</div>
-        <div><i class=" fas fa-times fa-3x"></i></div>
-      </div>
-
-      <div class="item border-white text-white">
-        <i class=" fas fa-check fa-3x"></i>
-
-        <div>ITEM</div>
-        <div><i class=" fas fa-times fa-3x"></i></div>
+        <div>
+          <i @click="crossSelected('E')" class="fas fa-times fa-3x"></i>
+        </div>
       </div>
 
-      <div class="item border-white text-white">
-        <i class=" fas fa-check fa-3x"></i>
+      <div
+        :style="{
+          backgroundColor: checkFSelected ? 'green' : 'transparent',
+          background: crossFSelected ? 'red' : 'transparent',
+        }"
+        class="item border-white text-white"
+      >
+        <i @click="checkSelected('F')" class="fas fa-check fa-3x"></i>
 
         <div>ITEM</div>
-        <div><i class=" fas fa-times fa-3x"></i></div>
+        <div>
+          <i @click="crossSelected('F')" class="fas fa-times fa-3x"></i>
+        </div>
       </div>
-      <div class="item border-white text-white">
-        <i class=" fas fa-check fa-3x"></i>
+
+      <div
+        :style="{
+          backgroundColor: checkGSelected ? 'green' : 'transparent',
+          background: crossGSelected ? 'red' : 'transparent',
+        }"
+        class="item border-white text-white"
+      >
+        <i @click="checkSelected('G')" class="fas fa-check fa-3x"></i>
 
         <div>ITEM</div>
-        <div><i class=" fas fa-times fa-3x"></i></div>
+        <div>
+          <i @click="crossSelected('G')" class="fas fa-times fa-3x"></i>
+        </div>
+      </div>
+      <div
+        :style="{
+          backgroundColor: checkHSelected ? 'green' : 'transparent',
+          background: crossHSelected ? 'red' : 'transparent',
+        }"
+        class="item border-white text-white"
+      >
+        <i @click="checkSelected('H')" class="fas fa-check fa-3x"></i>
+
+        <div>ITEM H</div>
+        <div>
+          <i @click="crossSelected('H')" class="fas fa-times fa-3x"></i>
+        </div>
       </div>
     </div>
   </section>
@@ -104,7 +159,6 @@
   background-color: red;
 }
 
-
 .check {
   background-color: green;
 }
@@ -131,31 +185,64 @@ export default {
       crossESelected: false,
       crossFSelected: false,
       crossGSelected: false,
-      crossHSelected: false
+      crossHSelected: false,
     };
   },
   methods: {
     checkSelected(check) {
+      console.log(check)
       if (check === "A") {
-        this.checkASelected = true;
+        this.checkASelected = true
       } else if (check === "B") {
-        this.checkBSelected = true;
+        this.checkBSelected = true
       } else if (check === "C") {
-        this.checkBSelected = true;
+        this.checkBSelected = true
       } else if (check === "D") {
-        this.checkBSelected = true;
+        this.checkBSelected = true
       } else if (check === "E") {
-        this.checkBSelected = true;
+        this.checkBSelected = true
       } else if (check === "F") {
-        this.checkBSelected = true;
+        this.checkBSelected = true
       } else if (check === "G") {
-        this.checkBSelected = true;
+        this.checkBSelected = true
       } else if (check === "H") {
-        this.checkBSelected = true;
+        this.checkBSelected = true
       }
     },
 
+    // crossySelected(cross) {
+    //   switch (cross === "A") {
+    //     case cross === "A":
+    //       this.crossASelected = true;
+    //       break;
+    //     case cross === "B":
+    //       this.crossBSelected = true;
+    //       break;
+    //     case cross === "C":
+    //       this.crossCSelected = true;
+    //       break;
+    //     case cross === "D":
+    //       this.crossDSelected = true;
+    //       break;
+    //     case cross === "E":
+    //       this.crossESelected = true;
+    //       break;
+    //     case cross === "F":
+    //       this.crossFSelected = true;
+    //       break;
+    //     case cross === "G":
+    //       this.crossGSelected = true;
+    //       break;
+    //     case cross === "H":
+    //       this.crossHSelected = true;
+    //       break;
+    //     default:
+    //       break;
+    //   }
+    // },
+
     crossSelected(cross) {
+      console.log(cross)
       if (cross === "A") {
         this.crossASelected = true;
       } else if (cross === "B") {
@@ -173,7 +260,7 @@ export default {
       } else if (cross === "H") {
         this.crossBSelected = true;
       }
-    }
-  }
+    },
+  },
 };
 </script>
