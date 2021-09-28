@@ -1,7 +1,6 @@
 <template>
   <div>
     <Header />
-    <Services-Hero/>
   </div>
 </template>
 

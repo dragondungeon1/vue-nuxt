@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header />
-    <Index-Hero />
+    <Index-Hero/>
     <Index-CardRow/>
     <Index-Location/>
     <Footer/>

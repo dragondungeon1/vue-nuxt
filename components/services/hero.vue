@@ -14,7 +14,6 @@
             <a class="btn btn-outline-primary" href="/about">Learn more</a>
           </div>
         </b-col>
-
         <b-col class="text-white mb-5 high"
         >
           <div class="card text-center">
