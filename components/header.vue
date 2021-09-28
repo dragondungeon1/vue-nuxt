@@ -74,6 +74,9 @@ export default {
 section {
   margin-bottom: 2rem;
 }
+*{
+  z-index: 1;
+}
 
 hr.solid {
   border-top: 1px solid #e1e45c;
