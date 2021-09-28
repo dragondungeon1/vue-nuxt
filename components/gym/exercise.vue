@@ -210,6 +210,27 @@ export default {
       }
     },
 
+    crossSelected(cross) {
+      console.log(cross)
+      if (cross === "A") {
+        this.crossASelected = true;
+      } else if (cross === "B") {
+        this.crossBSelected = true;
+      } else if (cross === "C") {
+        this.crossBSelected = true;
+      } else if (cross === "D") {
+        this.crossBSelected = true;
+      } else if (cross === "E") {
+        this.crossBSelected = true;
+      } else if (cross === "F") {
+        this.crossBSelected = true;
+      } else if (cross === "G") {
+        this.crossBSelected = true;
+      } else if (cross === "H") {
+        this.crossBSelected = true;
+      }
+    },
+
     // crossySelected(cross) {
     //   switch (cross === "A") {
     //     case cross === "A":
@@ -240,27 +261,6 @@ export default {
     //       break;
     //   }
     // },
-
-    crossSelected(cross) {
-      console.log(cross)
-      if (cross === "A") {
-        this.crossASelected = true;
-      } else if (cross === "B") {
-        this.crossBSelected = true;
-      } else if (cross === "C") {
-        this.crossBSelected = true;
-      } else if (cross === "D") {
-        this.crossBSelected = true;
-      } else if (cross === "E") {
-        this.crossBSelected = true;
-      } else if (cross === "F") {
-        this.crossBSelected = true;
-      } else if (cross === "G") {
-        this.crossBSelected = true;
-      } else if (cross === "H") {
-        this.crossBSelected = true;
-      }
-    },
   },
 };
 </script>
