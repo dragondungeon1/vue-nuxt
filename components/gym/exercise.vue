@@ -28,6 +28,7 @@
       >
         <i @click="toggleCheck(index, true)" class="fas fa-check fa-3x"></i>
         <div>{{ check.name }}</div>
+        <div>{{check.weight}}</div>
         <div>
           <i @click="toggleCheck(index, false)" class="fas fa-times fa-3x"></i>
         </div>
@@ -42,7 +43,8 @@ export default {
     return {
       checks: [
         {
-          name: 'Cardio'
+          name: 'bench press',
+          weight: '3x10x70' ,
         },
         {
           name: 'Cardio'
