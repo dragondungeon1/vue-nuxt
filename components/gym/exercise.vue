@@ -27,7 +27,7 @@
         }"
       >
         <i @click="toggleCheck(index, true)" class="fas fa-check fa-3x"></i>
-        <div>{{ check.name }} - {{ checklist[index] }}</div>
+        <div>{{ check.name }}</div>
         <div>
           <i @click="toggleCheck(index, false)" class="fas fa-times fa-3x"></i>
         </div>
@@ -35,7 +35,6 @@
     </div>
   </section>
 </template>
-// backgroundColor: crossASelected ? 'red' : 'transparent'
 
 <script>
 export default {
