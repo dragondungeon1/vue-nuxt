@@ -31,8 +31,8 @@
         </b-col>
         <b-col class="text-white text-center mobile">
           <b-img
-            class="big"
-            src="../../assets/img/png/hero.png"
+            class="w-75"
+            src="../../assets/img/svg/male.svg"
             fluid
             alt="Responsive image"
           ></b-img>
