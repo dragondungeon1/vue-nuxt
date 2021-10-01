@@ -44,11 +44,28 @@ export default {
       checks: [
         {
           name: 'bench press',
-          weight: '3x10x70' ,
+          weight: '3x5x70' ,
         },
         {
-          name: 'Cardio'
-        }
+          name: 'incline bench',
+          weight: '3x10x50',
+        },
+        {
+          name: 'overhead press',
+          weight: '4x6x45',
+        },
+        {
+          name: 'db shoulder press',
+          weight: '3x8x15',
+        },
+        {
+          name: 'db incline bench press',
+          weight: '3x10x15',
+        },
+        {
+          name: 'ez bar tricep',
+          weight: '3x12x30',
+        },
       ],
       checklist: []
     };
@@ -87,7 +104,8 @@ export default {
 
       // Check if state is true
       return item.state === true;
-    }
+    },
+    
   },
 };
 </script>
