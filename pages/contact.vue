@@ -1,11 +1,11 @@
 <template>
   <div class="container">
     <form ref="form" @submit.prevent="sendEmail">
-      <label>Name</label>
+      <label>name</label>
       <input type="text" name="user_name" />
-      <label>Email</label>
+      <label>email</label>
       <input type="email" name="user_email" />
-      <label>Message</label>
+      <label>message</label>
       <textarea name="message"></textarea>
       <input type="submit" value="Send" />
     </form>
@@ -16,6 +16,14 @@
 import emailjs from "emailjs-com";
 
 export default {
+    data() {
+        return {
+            email: "",
+            name: "",
+            message: ""
+        }
+    },
+
   methods: {
     sendEmail() {
       emailjs
@@ -31,9 +39,14 @@ export default {
           },
           (error) => {
             console.log("FAILED...", error.text);
-          }
+          },
         );
     },
+    resetInput() {
+        this.email = "",
+        this.message = "",
+        this.name = ""
+    }
   },
 };
 </script>
