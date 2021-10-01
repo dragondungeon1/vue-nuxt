@@ -40,7 +40,10 @@ export default {
           (error) => {
             console.log("FAILED...", error.text);
           },
-        );
+        )
+        .then(
+            alert('thank you for emailing we will be in contact with you')
+        )
     },
     resetInput() {
         this.email = "",
